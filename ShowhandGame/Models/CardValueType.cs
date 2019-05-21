@@ -18,7 +18,7 @@ namespace ShowhandGame.Models
         
         Nine = 9,
         
-        Ten = 10,
+        T = 10,
         
         J = 11,
         
