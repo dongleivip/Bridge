@@ -16,6 +16,7 @@ bld/
 # JetBrains Rider
 .idea/
 *.sln.iml
+*.sln.DotSettings.user
 
 # Visual Studio 2015 cache/options directory
 .vs/
