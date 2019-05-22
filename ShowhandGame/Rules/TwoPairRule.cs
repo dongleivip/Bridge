@@ -8,7 +8,9 @@ namespace ShowhandGame.Rules
     {
         public bool IsMatch(List<Card> cards)
         {
-            return cards.GroupBy(x => x.ValueType).Count() == 3;
+            var group = cards.GroupBy(x => x.ValueType).ToList();
+
+            return group.Count == 3 && group.Count(g => g.Count() == 2) == 2;
         }
     }
 }
