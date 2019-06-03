@@ -17,5 +17,7 @@ namespace ShowhandGame.Rules
 
             return isStraight && cards.GroupBy(x => x.Suit).Count() == 1;
         }
+
+        public new Category CategoryType => Category.StraightFlush;
     }
 }

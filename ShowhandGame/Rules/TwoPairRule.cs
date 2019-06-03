@@ -12,5 +12,7 @@ namespace ShowhandGame.Rules
 
             return group.Count == 3 && group.Count(g => g.Count() == 2) == 2;
         }
+
+        public Category CategoryType => Category.TwoPairs;
     }
 }

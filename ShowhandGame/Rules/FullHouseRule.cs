@@ -21,5 +21,7 @@ namespace ShowhandGame.Rules
             
             return  group.Count > 0 && group.All(g => g.Count() >= 2);
         }
+
+        public Category CategoryType => Category.FullHouse;
     }
 }

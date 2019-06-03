@@ -14,5 +14,7 @@ namespace ShowhandGame.Rules
             // 8, 8, 1, 1, 2
             return group.Count() == 3 && group.Any(x => x.Count() == 3);
         }
+
+        public Category CategoryType => Category.ThreeOfAKind;
     }
 }

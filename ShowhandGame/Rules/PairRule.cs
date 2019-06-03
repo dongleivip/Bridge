@@ -10,7 +10,9 @@ namespace ShowhandGame.Rules
         {
             var valueGroup = cards.GroupBy(c => c.ValueType);
 
-            return valueGroup.Count() <= 4;
+            return valueGroup.Count() == 4;
         }
+
+        public Category CategoryType => Category.Pair;
     }
 }

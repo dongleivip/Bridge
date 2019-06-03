@@ -31,5 +31,7 @@ namespace ShowhandGame.Rules
 
             return true;
         }
+
+        public Category CategoryType => Category.Straight;
     }
 }

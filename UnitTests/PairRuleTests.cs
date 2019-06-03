@@ -32,14 +32,14 @@ namespace UnitTests
 
 
         [Theory]
-        [InlineData("2H 2D 5S 9C KD")]
-        [InlineData("2H 2D 2S 9C KD")]
-        [InlineData("2H 2D 2S 2C KD")]
-        public void ShouldReturnTrueWhenPokerHasMoreThanOnePair(string cardsText)
+        [InlineData("2H 2D 5S 9C KD", true)]
+        [InlineData("2H 2D 2S 9C KD", false)]
+        [InlineData("2H 2D 2S 2C KD", false)]
+        public void ShouldReturnTrueWhenPokerHasMoreThanOnePair(string cardsText, bool isExpected)
         {
             var cards = cardsText.Split(" ").Select(text => new Card(text)).ToList();
             
-            Assert.True(_rule.IsMatch(cards));
+            Assert.Equal(isExpected, _rule.IsMatch(cards));
         }
     }
 }

@@ -10,5 +10,7 @@ namespace ShowhandGame.Rules
         {
             return cards.GroupBy(x => x.ValueType).Any(g => g.Count() == 4);
         }
+
+        public Category CategoryType => Category.FourOfAKind;
     }
 }

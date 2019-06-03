@@ -25,12 +25,11 @@ namespace ShowhandGame.Models
        
         public List<Card> Cards { get; private set; }
 
-        public Category Category { get; private set; }
+        public Category Category { get; set; }
 
         private Category GetCategory()
         {
             return Category.HighCard;
         }
-
     }
 }
