@@ -3,16 +3,16 @@ using System.Linq;
 
 namespace ShowhandGame.Models
 {
-    public class Poker
+    public class Player
     {
-        public Poker()
+        public Player()
         {
             Cards = new List<Card>();
             Category = Category.HighCard;
         }
         
         
-        public Poker(string name, string inputCards)
+        public Player(string name, string inputCards)
         {
             Name = name;
             

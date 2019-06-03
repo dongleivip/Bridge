@@ -23,7 +23,7 @@ namespace UnitTests
         [InlineData("2H 3H 4H 5H 6D", false)]
         public void ShouldReturnTrueWhenPokerHasAllCardsWithSameSuit(string cardText, bool expected)
         {
-            var cards = new Poker("Flush", cardText).Cards;
+            var cards = new Player("Flush", cardText).Cards;
             
             Assert.Equal(expected, _rule.IsMatch(cards));
         }

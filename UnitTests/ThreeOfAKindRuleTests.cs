@@ -21,7 +21,7 @@ namespace UnitTests
         [InlineData("2H 2D 2S 2C KD", false)]
         public void ShouldReturnTrueWhenHasThreeSameValueCards(string cardText, bool expected)
         {
-            var poker = new Poker("Test" ,cardText);
+            var poker = new Player("Test" ,cardText);
             
             Assert.Equal(expected, _rule.IsMatch(poker.Cards));
         }

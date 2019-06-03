@@ -23,7 +23,7 @@ namespace UnitTests
         [InlineData("2H 2D 3S 3C KD", false)]
         public void ShouldReturnTrueWhenPokerHasFiveConsecutiveValues(string cardText, bool expected)
         {
-            var poker = new Poker("Test", cardText);
+            var poker = new Player("Test", cardText);
             
             Assert.Equal(expected, _rule.IsMatch(poker.Cards));
         }

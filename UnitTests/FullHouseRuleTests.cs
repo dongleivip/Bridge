@@ -17,7 +17,7 @@ namespace UnitTests
         {
             var rule = new FullHouseRule();
 
-            var poker = new Poker("FullHouse",cardText);
+            var poker = new Player("FullHouse",cardText);
             
             Assert.Equal(expected, rule.IsMatch(poker.Cards));
         }

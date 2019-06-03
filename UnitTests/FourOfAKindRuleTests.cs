@@ -16,7 +16,7 @@ namespace UnitTests
         {
             var rule = new FourOfAKindRule();
 
-            var poker = new Poker("FourOfAKind", cardText);
+            var poker = new Player("FourOfAKind", cardText);
             
             Assert.Equal(expected, rule.IsMatch(poker.Cards));
         }
